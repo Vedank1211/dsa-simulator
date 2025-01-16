@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply flex items-center space-x-1 text-gray-700 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 transition-colors;
+  }
+
+  .mobile-nav-link {
+    @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+  }
+
+  .visualization-input {
+    @apply mr-2 p-2 border rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-teal-300 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400 focus:border-transparent;
+  }
+
+  .visualization-button {
+    @apply px-4 py-2 rounded font-medium transition-colors;
+  }
+
+  .visualization-button-primary {
+    @apply visualization-button bg-teal-500 hover:bg-teal-600 text-white dark:bg-teal-600 dark:hover:bg-teal-500 dark:text-teal-100;
+  }
+
+  .visualization-button-danger {
+    @apply visualization-button bg-red-500 hover:bg-red-600 text-white dark:bg-red-600 dark:hover:bg-red-500 dark:text-red-100;
+  }
+
+  .visualization-node {
+    @apply bg-primary dark:bg-teal-600 text-white dark:text-teal-100 shadow-lg dark:shadow-teal-500/20;
+  }
+}
